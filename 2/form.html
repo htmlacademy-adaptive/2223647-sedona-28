@@ -42,126 +42,141 @@
       </div>
     </nav>
   </header>
+
   <main class="main-container">
     <section class="hero">
       <h1 class="visually-hidden">Форма для обратной связи "Седона"</h1>
-      <img src="img/text-index.svg" width="282" height="214" alt="Wellcome to the gorgeous Sedona «Because Grand Canyon Sucks»">
+      <img src="img/text-index.svg" width="282" height="214"
+        alt="Wellcome to the gorgeous Sedona «Because Grand Canyon Sucks»">
     </section>
-    <div class="form-feedback_container">
-      <section class="form-feedback">
+
+
+    <section class="form-feedback">
+      <div class="form-feedback_container">
         <h2 class="form-feedback_title">Оставьте свой отзыв</h2>
         <p class="form-feedback_description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
           посещенных вами достопримечательностях</p>
-      </section>
-        <form action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset>
-            <legend class="form-feedback_input-datа">
-              Представьтесь:
-            </legend>
-            <ul>
-              <li>
-                <label for="username-field">Имя:*</label>
-                <input type="text" name="username" placeholder="Петр" id="username-field" required>
-              </li>
-              <li>
-                <label for="usersurname-field">Фамилия:*</label>
-                <input type="text" name="usersurname" placeholder="Пустота" id="usersurname-field" required>
-              </li>
-              <li>
-                <label for="userpatronymic-field">Отчество:</label>
-                <input type="text" name="userpatronymic" placeholder="Викторович" id="userpatronymic-field">
-              </li>
-            </ul>
-          </fieldset>
-
-
-
-        <fieldset class="contact-information">
-          <legend class="contact-information__titel">
-            Контактная информация
-          </legend>
-          <ul class="contact-information__list">
-            <li>
-              <label for="number">Контактный телефон:*</label>
-              <input type="tel" name="phone" placeholder="Введите телефон" id="number" required>
-            </li>
-            <li>
-              <label for="email">Электронная почта:*</label>
-              <input type="email" name="mail" placeholder="Введите e-mail" id="email" required>
-            </li>
-          </ul>
-        </fieldset>
-
-
-        <fieldset class="your-impression">
-          <legend class="your-impression__title">
-            Ваше общее впечатление
-          </legend>
-          <ul class="your-impression__list">
-            <li>
-              <input type="radio" name="your-impression" id="positive-impression" value="positive" checked>
-              <label for="positive-impression">Скорее положительное</label>
-            </li>
-            <li>
-              <input type="radio" name="your-impression" id="negative-impression" value="negative">
-              <label for="negative-impression">Скорее отрицательное</label>
-            </li>
-            <li>
-              <input type="radio" name="your-impression" id="dont-know-impression" value="dont-know-impression">
-              <label for="dont-know-impression">Затрудняюсь ответить</label>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="popover popover-error">
-          <div class="popover-content">
-            <h2 class="popover-title">Что-то пошло не так!</h2>
-            <p class="popover-description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-            <button class="popover-close-button button">
-              Ok
-            </button>
-          </div>
-        </div>
-      </section>
-
-        <fieldset class="attractions">
-          <legend class="attractions__title">
-            Посещенные достопримечательности
-          </legend>
-          <ul class="attractions__list">
-            <li>
-              <input type="checkbox" name="bridge" id="devil-bridge" checked>
-              <label for="devil-bridge">Мост Дьявола</label>
-            </li>
-            <li>
-              <input type="checkbox" name="mountain" id="bell-mountain" checked>
-              <label for="bell-mountain">Гора колокол</label>
-            </li>
-            <li>
-              <input type="checkbox" name="park" id="slide-park" checked>
-              <label for="slide-park">Сдайд-парк</label>
-            </li>
-            <li>
-              <input type="checkbox" name="attraction" id="red-rocks">
-              <label for="red-rocks">Красные скалы</label>
-            </li>
-          </ul>
-        </fieldset>
-
-      <div class="describe-emotions_container">
-        <label for="message">Опишите свои эмоции</label>
-        <textarea name="comment" placeholder="Опишите подробно все свои восторги" id="message"></textarea>
       </div>
+    </section>
 
-      <div class="popover popover-send">
+    <form action="https://echo.htmlacademy.ru/" method="get">
+      <fieldset>
+        <legend class="form-feedback_input-datа">
+          Представьтесь:
+        </legend>
+        <ul>
+          <li>
+            <label for="username-field">Имя:*</label>
+            <input type="text" name="username" placeholder="Петр" id="username-field" required>
+          </li>
+          <li>
+            <label for="usersurname-field">Фамилия:*</label>
+            <input type="text" name="usersurname" placeholder="Пустота" id="usersurname-field" required>
+          </li>
+          <li>
+            <label for="userpatronymic-field">Отчество:</label>
+            <input type="text" name="userpatronymic" placeholder="Викторович" id="userpatronymic-field">
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+
+    <form action="https://echo.htmlacademy.ru/" method="get">
+      <fieldset class="contact-information">
+        <legend class="contact-information__titel">
+          Контактная информация
+        </legend>
+        <ul class="contact-information__list">
+          <li>
+            <label for="number">Контактный телефон:*</label>
+            <input type="tel" name="phone" placeholder="Введите телефон" id="number" required>
+          </li>
+          <li>
+            <label for="email">Электронная почта:*</label>
+            <input type="email" name="mail" placeholder="Введите e-mail" id="email" required>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+
+    <form action="https://echo.htmlacademy.ru/" method="get">
+      <fieldset class="your-impression">
+        <legend class="your-impression__title">
+          Ваше общее впечатление
+        </legend>
+        <ul class="your-impression__list">
+          <li>
+            <input type="radio" name="your-impression" id="positive-impression" value="positive" checked>
+            <label for="positive-impression">Скорее положительное</label>
+          </li>
+          <li>
+            <input type="radio" name="your-impression" id="negative-impression" value="negative">
+            <label for="negative-impression">Скорее отрицательное</label>
+          </li>
+          <li>
+            <input type="radio" name="your-impression" id="dont-know-impression" value="dont-know-impression">
+            <label for="dont-know-impression">Затрудняюсь ответить</label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+
+    <section class="popover__container">
+      <div class="popover popover-error">
         <div class="popover-content">
-          <h3 class="popover-title">Ваш отзыв отправлен</h3>
-          <p class="popover-description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
-            опубликуем его на сайте.</p>
+          <h2 class="popover-title">Что-то пошло не так!</h2>
+          <p class="popover-description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           <button class="popover-close-button button">
-            Закрыть окно
+            Ok
           </button>
         </div>
       </div>
+    </section>
+
+    <form action="https://echo.htmlacademy.ru/" method="get">
+      <fieldset class="attractions">
+        <legend class="attractions__title">
+          Посещенные достопримечательности
+        </legend>
+        <ul class="attractions__list">
+          <li>
+            <input type="checkbox" name="bridge" id="devil-bridge" checked>
+            <label for="devil-bridge">Мост Дьявола</label>
+          </li>
+          <li>
+            <input type="checkbox" name="mountain" id="bell-mountain" checked>
+            <label for="bell-mountain">Гора колокол</label>
+          </li>
+          <li>
+            <input type="checkbox" name="park" id="slide-park" checked>
+            <label for="slide-park">Сдайд-парк</label>
+          </li>
+          <li>
+            <input type="checkbox" name="attraction" id="red-rocks">
+            <label for="red-rocks">Красные скалы</label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+
+    <form action="https://echo.htmlacademy.ru/" method="get">
+      <div class="describe-emotions__container">
+        <label for="message">Опишите свои эмоции</label>
+        <textarea name="comment" placeholder="Опишите подробно все свои восторги" id="message"></textarea>
+      </div>
+    </form>
+
+    <div class="popover popover-send">
+      <div class="popover-content">
+        <h3 class="popover-title">Ваш отзыв отправлен</h3>
+        <p class="popover-description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
+          опубликуем его на сайте.</p>
+        <button class="popover-close-button button">
+          Закрыть окно
+        </button>
+      </div>
+    </div>
+    <div class="feedback__container">
       <button class="send-feedback" type="submit">Отправить отзыв</button>
       <p class="required-fields__legend">
         <small>
@@ -169,8 +184,8 @@
         </small>
       </p>
     </div>
-  </form>
   </main>
+
   <footer class="footer">
     <div class="footer__title">
       <b class="footer__title">#visitsedona</b>
@@ -196,7 +211,6 @@
       </a>
     </div>
   </footer>
-
 </body>
 
 </html>
