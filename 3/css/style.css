@@ -56,11 +56,6 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
-.social__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 .footer__copyright {
   font-size: 14px;
   line-height: 21px;
@@ -74,31 +69,6 @@ body {
   margin-left: 68px;
   padding: 0;
 }
-.nav_toggle {
-  width: 23px;
-}
-.nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background-color: hsl(203, 47%, 66%);
-}
-.nav__list-item {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  padding-top: 30px;
-  align-items: center;
-}
-.nav-link__list-item {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: hsl(0, 0%, 100%);
-}
 .hero {
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
@@ -110,19 +80,6 @@ body {
   display: flex;
   margin: 0 auto;
   padding-top: 90px;
-}
-.hero-inner {
-  background-image: url("../img/back-sedona.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-width: 320px;
-  min-height: 214px;
-}
-.hero-inner__img {
-  display: flex;
-  width: 229px;
-  height: 39px;
-  margin: 0 auto;
 }
 .advantages__slogan {
   display: flex;
@@ -366,7 +323,7 @@ body {
   font-weight: 700;
   color: #000000;
 }
-.popover-title {
+.popover__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -374,11 +331,11 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-.popover-description {
+.popover__description {
   text-transform: uppercase;
   text-align: center;
 }
-.popover-close-button {
+.popover__close-button {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -451,5 +408,48 @@ body {
   text-transform: uppercase;
   text-align: right;
   color: #cccccc;
+}
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav_toggle {
+  width: 23px;
+}
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: hsl(203, 47%, 66%);
+}
+.nav__item {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding-top: 30px;
+  align-items: center;
+}
+.nav__link {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+}
+.hero-inner {
+  background-image: url("../img/back-sedona.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 320px;
+  min-height: 214px;
+}
+.hero-inner__img {
+  display: flex;
+  width: 229px;
+  height: 39px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
