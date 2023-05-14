@@ -1,10 +1,18 @@
-.nav_toggle {
+.nav {
+  outline: 5px solid rgba(255, 0, 0, 0.8);;
+  outline-offset: -3px;
+}
+
+
+.nav__toggle {
   width: 23px;
 }
 
 .nav__list {
   .list-reset();
   background-color: @complementary-color;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
 }
 
 .nav__item {
@@ -20,4 +28,17 @@
   text-decoration: none;
   text-transform: uppercase;
   color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: @tablet-width) {
+  .nav__container {
+    display: flex;
+    justify-content: space-between;
+    width: 672px;
+    margin: 0 auto;
+  }
+
+  .nav__list {
+    width: 511px;
+  }
 }
