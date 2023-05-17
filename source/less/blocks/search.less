@@ -10,12 +10,13 @@
 }
 
 .search__description {
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  padding-left: 29px;
-  padding-right: 29px;
+  align-items: center;
 }
 
 .search__button {
@@ -32,3 +33,19 @@
   text-transform: uppercase;
   margin-bottom: 49px;
 }
+
+@media (min-width: @tablet-width) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 768px;
+  }
+
+  .search__button {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 121px;
+  }
+}
+
