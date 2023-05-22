@@ -1,16 +1,24 @@
-.photo-video {
-  background-color: @base-color;
+.photo-video__header {
   display: flex;
   flex-direction: column;
+  width: 320px;
   align-items: center;
 }
 
+.photo-video__container {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
 .photo-video__title {
+  display: flex;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .photo-video__description {
@@ -19,6 +27,7 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  align-items: center;
 }
 
 .photo-video__list {
@@ -37,4 +46,34 @@
 .photo-video__likes-count {
   font-weight: 700;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-video__header {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    align-items: center;
+  }
+
+  .photo-video__container {
+    display: flex;
+    flex-direction: column;
+    width: 458px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-video__header {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    align-items: center;
+  }
+
+  .photo-video__container {
+    display: flex;
+    flex-direction: column;
+    width: 458px;
+  }
 }
