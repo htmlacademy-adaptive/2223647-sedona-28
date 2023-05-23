@@ -42,6 +42,22 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.center-container {
+  width: 320px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .center-container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .center-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -383,6 +399,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 280px;
+  align-items: center;
 }
 .photo-video__title {
   display: flex;
@@ -391,7 +408,6 @@ body {
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 auto;
 }
 .photo-video__description {
   display: flex;
@@ -399,7 +415,6 @@ body {
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  align-items: center;
 }
 .photo-video__list {
   margin: 0;
@@ -428,7 +443,19 @@ body {
   .photo-video__container {
     display: flex;
     flex-direction: column;
-    width: 458px;
+    width: 648px;
+  }
+  .photo-video__list {
+    display: flex;
+    flex-direction: row;
+    width: 648px;
+    flex-wrap: wrap;
+  }
+  .photo-video__img-main {
+    width: 648px;
+  }
+  .photo-video__img {
+    width: 324px;
   }
 }
 @media (min-width: 1200px) {
@@ -441,7 +468,20 @@ body {
   .photo-video__container {
     display: flex;
     flex-direction: column;
-    width: 458px;
+    width: 1200px;
+  }
+  .photo-video__list {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    flex-wrap: wrap;
+  }
+  .photo-video__img-main {
+    width: 1200px;
+    height: 400px;
+  }
+  .photo-video__img {
+    width: 400px;
   }
 }
 .video {
@@ -462,6 +502,16 @@ body {
   display: flex;
   text-align: center;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .video__img {
+    width: 648px;
+  }
+}
+@media (min-width: 1200px) {
+  .video__img {
+    width: 800px;
+  }
 }
 .form-feedback__container {
   display: flex;
@@ -510,6 +560,18 @@ body {
   color: #000000;
   color: #4d4d4d;
 }
+@media (min-width: 768px) {
+  .form__info-container {
+    display: flex;
+    flex-direction: row;
+    width: 648px;
+  }
+}
+@media (min-width: 1200px) {
+  .form__info-container {
+    width: 960px;
+  }
+}
 .your-impression__title {
   font-size: 18px;
   line-height: 26px;
@@ -528,6 +590,22 @@ body {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+}
+@media (min-width: 768px) {
+  .your-impression__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 600px;
+    min-height: 162px;
+  }
+}
+@media (min-width: 1200px) {
+  .your-impression__list {
+    display: flex;
+    justify-content: space-around;
+    width: 960px;
+  }
 }
 .popover__title {
   font-size: 18px;
@@ -574,6 +652,21 @@ body {
   font-weight: 700;
   color: #000000;
 }
+@media (min-width: 768px) {
+  .attractions__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .attractions__list {
+    display: flex;
+    justify-content: space-around;
+    width: 960px;
+  }
+}
 .describe-emotions__container {
   display: flex;
   flex-direction: column;
@@ -594,6 +687,18 @@ body {
   color: #000000;
   background-color: hsl(0, 0%, 95%);
 }
+@media (min-width: 768px) {
+  .describe-emotions__comment {
+    width: 648px;
+    height: 160px;
+  }
+}
+@media (min-width: 1200px) {
+  .describe-emotions__comment {
+    width: 768px;
+    height: 160px;
+  }
+}
 .send-feedback {
   font-size: 18px;
   line-height: 26px;
@@ -606,9 +711,8 @@ body {
   text-align: center;
   border: none;
   padding: 16px 49px;
-  margin: 0 auto;
 }
-.required-fields__legend {
+.send-feedback__legend {
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
@@ -650,7 +754,11 @@ body {
     display: flex;
     justify-content: space-between;
     width: 672px;
-    margin: 0 auto;
+    color: #000000;
+    background-color: #ffffff;
+  }
+  .nav__link {
+    color: #000000;
   }
   .nav__toggle {
     display: none;
@@ -659,6 +767,7 @@ body {
 @media (min-width: 1200px) {
   .nav__list {
     width: 780px;
+    background-color: #ffffff;
   }
 }
 .hero-inner {
@@ -672,6 +781,17 @@ body {
   display: flex;
   width: 229px;
   height: 39px;
-  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .hero-inner {
+    width: 1200;
+    height: 518px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-inner {
+    width: 1200;
+    height: 518px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
