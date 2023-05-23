@@ -11,3 +11,20 @@
 .attractions__item {
   .bold();
 }
+
+@media (min-width: @tablet-width) {
+  .attractions__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attractions__list {
+    display: flex;
+    justify-content: space-around;
+    width: 960px;
+  }
+}
