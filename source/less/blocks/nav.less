@@ -21,3 +21,28 @@
   text-transform: uppercase;
   color: hsl(0, 0%, 100%);
 }
+
+@media (min-width: @tablet-width) {
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 672px;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .nav__link {
+    color: #000000;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nav__list {
+    width: 780px;
+    background-color: #ffffff;
+  }
+}

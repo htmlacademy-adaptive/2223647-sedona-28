@@ -1,3 +1,12 @@
+// Мобильная версия
+
+.advantages__header {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  align-items: center;
+}
+
 .advantages__slogan {
   display: flex;
   font-size: 18px;
@@ -31,6 +40,19 @@
   background-color: @complementary-color;
 }
 
+.advantages__img {
+  object-position: center;
+  width: 520px;
+  height: 260px;
+}
+
+.advantages__container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 211px;
+}
+
 .advantages__title {
   .bold();
   display: flex;
@@ -56,7 +78,7 @@
   width: 284px;
 }
 
-.advantages-city__title {
+.advantages__city-title {
   .bold();
   text-transform: uppercase;
 }
@@ -73,15 +95,113 @@
   text-align: left;
 }
 
-.advantages-city__item {
+.advantages__city-item {
   display: flex;
   flex-direction: column;
   background-color: hsl(0, 0%, 93%);
   align-items: center;
 }
 
-.advantages-city__description {
+.advantages__city-description {
   text-transform: uppercase;
   width: 255px;
   text-align: center;
+}
+
+// Планшетная версия
+
+@media (min-width: @tablet-width) {
+  .advantages__header {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    align-items: center;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+
+  .advantages__container-city {
+    display: flex;
+    width: 768px;
+  }
+
+  .advantages__davil-bridge {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .advantages__item {
+    height: 256px;
+    min-width: 256px;
+  }
+
+  .advantages__container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 190px;
+    min-height: 173px;
+    margin: 0 auto;
+  }
+
+  .advantages__title {
+    display: flex;
+    width: 150px;
+  }
+
+  .advantages__img {
+    display: flex;
+    width: 512px;
+    object-position: center;
+  }
+
+  .advantages__service-item {
+    width: 256px;
+  }
+
+  .advantages__city-item {
+    width: 256px;
+  }
+}
+
+// Десктопная версия
+
+@media (min-width: @desktop-width) {
+  .advantages__header {
+    width: 1200px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+  }
+
+  .advantages__container-city {
+    display: flex;
+    width: 1200px;
+  }
+
+  .advantages__container-text {
+    display: flex;
+    width: 300px;
+    min-height: 153px;
+  }
+
+  .advantages__service-item {
+    width: 400px;
+  }
+
+  .advantages__city-item {
+    width: 400px;
+  }
+
+  .advantages__img {
+    display: flex;
+    width: 800px;
+  }
 }

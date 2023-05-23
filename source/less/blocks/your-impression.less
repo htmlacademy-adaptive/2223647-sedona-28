@@ -11,3 +11,21 @@
 .your-impression__list-item {
   .bold();
 }
+
+@media (min-width: @tablet-width) {
+  .your-impression__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 600px;
+    min-height: 162px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .your-impression__list {
+    display: flex;
+    justify-content: space-around;
+    width: 960px;
+  }
+}

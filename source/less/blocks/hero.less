@@ -4,10 +4,36 @@
   background-size: contain;
   min-width: 320px;
   min-height: 390px;
+  margin: 0 auto;
 }
 
 .hero__img {
   display: flex;
   margin: 0 auto;
   padding-top: 90px;
+}
+
+@media (min-width: @tablet-width) {
+  .hero {
+    background-image: url("../img/back-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 518px;
+    min-width: 768px;
+  }
+
+  .hero__img {
+    width: 460px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero {
+    background-image: url("../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 518px;
+    min-width: 1200px;
+  }
 }
