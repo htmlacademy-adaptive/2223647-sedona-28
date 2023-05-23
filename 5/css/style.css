@@ -81,11 +81,17 @@ body {
 @media (min-width: 768px) {
   .footer {
     width: 768px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 @media (min-width: 1200px) {
   .footer {
     width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 .header {
@@ -723,6 +729,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 .nav_toggle {
   width: 23px;
